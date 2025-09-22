@@ -1,6 +1,6 @@
 # Privacy Policy for Prüfungstimer (Exam Timer)
 
-**Effective Date: January 22, 2025**
+**Effective Date: September 22, 2025**
 
 ## About This App
 
@@ -10,7 +10,7 @@ Prüfungstimer (Exam Timer) is an iPad application designed specifically for med
 
 **Developer:** Tobias Kowatsch
 **Email:** tobias.kowatsch@unisg.ch
-**Institution:** Universität Zürich und Universität St. Gallen
+**Institution:** Universität Zürich and Universität St. Gallen
 
 ## Data Collection and Privacy
 
@@ -56,9 +56,9 @@ We may update this privacy policy from time to time. Any changes will be reflect
 If you have any questions about this privacy policy or the Prüfungstimer app, please contact:
 
 **Tobias Kowatsch**
-Universität Zürich und Universität St. Gallen
+Universität Zürich and Universität St. Gallen
 Email: tobias.kowatsch@unisg.ch
 
 ---
 
-*This privacy policy was last updated on January 22, 2025*
+*This privacy policy was last updated on September 22, 2025*

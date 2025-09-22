@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Prüfungstimer
 
-**Gültig ab: 22. Januar 2025**
+**Gültig ab: 22. September 2025**
 
 ## Über diese App
 
@@ -61,4 +61,4 @@ E-Mail: tobias.kowatsch@unisg.ch
 
 ---
 
-*Diese Datenschutzerklärung wurde zuletzt am 22. Januar 2025 aktualisiert*
+*Diese Datenschutzerklärung wurde zuletzt am 22. September 2025 aktualisiert*
