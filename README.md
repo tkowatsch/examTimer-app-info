@@ -28,8 +28,8 @@
 
 ## Quick Links
 
-- **🔗 English Privacy Policy:** https://tkowatsch.github.io/examTimerClientIPadApp-privacyPolicy/PRIVACY_POLICY.html
-- **🔗 Deutsche Datenschutzerklärung:** https://tkowatsch.github.io/examTimerClientIPadApp-privacyPolicy/DATENSCHUTZ.html
+- **🔗 English Privacy Policy:** https://tkowatsch.github.io/examTimer-app-info/PRIVACY_POLICY.html
+- **🔗 Deutsche Datenschutzerklärung:** https://tkowatsch.github.io/examTimer-app-info/DATENSCHUTZ.html
 
 ---
 
