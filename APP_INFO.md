@@ -10,7 +10,7 @@
 
 ### 📱 **iPad Optimized Interface**
 - Full-screen landscape timer display
-- Large, easily readable countdown timers
+- Large, easily readable countdown timers with progress ring
 - Split-screen layout with schedule and main timer
 
 ### ⏰ **Synchronized Timing**
@@ -30,6 +30,23 @@
 - Live progress tracking during exams
 - Offline functionality with cached schedules
 
+### 🎥 **Video Recording** *(New in v1.2)*
+- Automatic video recording during exam sessions using the front camera
+- H.265/HEVC encoding for efficient video compression
+- Audio capture alongside video
+- Recording management: view, play back, and delete recordings from settings
+- Responsive video player adapting to different iPad sizes
+- Independent sound control — recording toggle is separate from exam audio
+- Safety controls — recording cannot be toggled during active exam sessions
+
+### 🤖 **AI Assistant** *(Experimental, New in v1.2)*
+- On-device speech-to-text transcription (requires iPadOS 26+ with Apple Intelligence)
+- WebVTT subtitle generation for recorded videos
+- Working Alliance assessment using three dimensions (Bond, Goals, Tasks)
+- Interactive chat for follow-up questions about assessments
+- Multi-language support (German, English, French, Italian)
+- All AI processing runs entirely on-device — no data is sent to external servers
+
 ### 🎵 **Custom Audio**
 - Professional German audio notifications
 - Sound testing in settings
@@ -42,15 +59,17 @@
 
 ## Technical Specifications
 
-- **Platform:** iPad (iOS 15.0+)
+- **Platform:** iPad (iPadOS 26+)
 - **Language:** German/English
 - **Database:** Firebase Firestore
 - **Architecture:** SwiftUI with Combine
+- **Video:** H.265/HEVC encoding with AVFoundation
+- **AI:** Apple Foundation Models & SpeechAnalyzer (on-device)
 - **Audio:** CAF format for reliability
 
 ## Privacy
 
-**No personal data is collected.** The app only retrieves exam schedule data and operates entirely locally on your device. See our [Privacy Policy](PRIVACY_POLICY.md) for complete details.
+**No personal data is collected or transmitted to external servers.** Exam schedules are retrieved from a secure database. Video recordings, transcriptions, and AI assessments are stored and processed exclusively on your device. See our [Privacy Policy](PRIVACY_POLICY.md) for complete details.
 
 ## Installation
 

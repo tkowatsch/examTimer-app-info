@@ -10,11 +10,11 @@
 
 ### 📱 **iPad-optimierte Benutzeroberfläche**
 - Vollbild-Querformat-Timer-Anzeige
-- Große, gut lesbare Countdown-Timer
+- Große, gut lesbare Countdown-Timer mit Fortschrittsring
 - Geteilte Bildschirmansicht mit Zeitplan und Haupt-Timer
 
 ### ⏰ **Synchronisierte Zeitmessung**
-- Echtzeitynchronisation mit zentraler Prüfungsdatenbank
+- Echtzeitsynchronisation mit zentraler Prüfungsdatenbank
 - Automatische Zeitzonenverwaltung (Europe/Zurich)
 - Uhrzeit-Drift-Erkennung und Warnungen
 
@@ -30,6 +30,23 @@
 - Live-Fortschrittsverfolgung während Prüfungen
 - Offline-Funktionalität mit zwischengespeicherten Plänen
 
+### 🎥 **Videoaufzeichnung** *(Neu in v1.2)*
+- Automatische Videoaufnahme während Prüfungssitzungen über die Frontkamera
+- H.265/HEVC-Kodierung für effiziente Videokomprimierung
+- Audioaufnahme zusammen mit Video
+- Aufnahmenverwaltung: Ansehen, Abspielen und Löschen von Aufzeichnungen in den Einstellungen
+- Responsiver Videoplayer, der sich an verschiedene iPad-Größen anpasst
+- Unabhängige Soundsteuerung — Aufnahme-Schalter ist getrennt von den Prüfungstönen
+- Sicherheitskontrollen — Aufnahme kann während aktiver Prüfungssitzungen nicht umgeschaltet werden
+
+### 🤖 **KI-Assistent** *(Experimentell, Neu in v1.2)*
+- Spracherkennung auf dem Gerät (erfordert iPadOS 26+ mit Apple Intelligence)
+- WebVTT-Untertitelerstellung für aufgezeichnete Videos
+- Working-Alliance-Bewertung anhand dreier Dimensionen (Bindung, Ziele, Aufgaben)
+- Interaktiver Chat für Folgefragen zu Bewertungen
+- Mehrsprachige Unterstützung (Deutsch, Englisch, Französisch, Italienisch)
+- Alle KI-Verarbeitung läuft vollständig auf dem Gerät — keine Daten werden an externe Server gesendet
+
 ### 🎵 **Benutzerdefiniertes Audio**
 - Professionelle deutsche Audio-Benachrichtigungen
 - Sound-Tests in den Einstellungen
@@ -42,15 +59,17 @@
 
 ## Technische Spezifikationen
 
-- **Plattform:** iPad (iOS 15.0+)
+- **Plattform:** iPad (iPadOS 26+)
 - **Sprache:** Deutsch/Englisch
 - **Datenbank:** Firebase Firestore
 - **Architektur:** SwiftUI mit Combine
+- **Video:** H.265/HEVC-Kodierung mit AVFoundation
+- **KI:** Apple Foundation Models & SpeechAnalyzer (auf dem Gerät)
 - **Audio:** CAF-Format für Zuverlässigkeit
 
 ## Datenschutz
 
-**Es werden keine persönlichen Daten erhoben.** Die App ruft nur Prüfungsplanadaten ab und arbeitet vollständig lokal auf Ihrem Gerät. Siehe unsere [Datenschutzerklärung](DATENSCHUTZ.md) für vollständige Details.
+**Es werden keine persönlichen Daten erhoben oder an externe Server übertragen.** Prüfungspläne werden von einer sicheren Datenbank abgerufen. Videoaufzeichnungen, Transkriptionen und KI-Bewertungen werden ausschließlich auf Ihrem Gerät gespeichert und verarbeitet. Siehe unsere [Datenschutzerklärung](DATENSCHUTZ.md) für vollständige Details.
 
 ## Installation
 
