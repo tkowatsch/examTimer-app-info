@@ -41,8 +41,10 @@
 - Sicherheitskontrollen — Aufnahme kann während aktiver Prüfungssitzungen nicht umgeschaltet werden
 
 ### 🤖 **KI-Assistent** *(Experimentell, Neu in v1.2)*
+> **Wichtig:** Der KI-Assistent erfordert ein iPad mit Apple-Intelligence-Unterstützung — das heißt iPad Pro (M1 oder neuer), iPad Air (M1 oder neuer) oder iPad mini (A17 Pro). Das Standard-iPad unterstützt Apple Intelligence aufgrund von Hardware-Einschränkungen nicht (mindestens 8 GB RAM erforderlich). iPadOS 26+ wird ebenfalls benötigt. Die KI-Assistenten-Schaltfläche wird auf nicht unterstützten Geräten automatisch ausgeblendet.
+
 - Basiert auf Apples lokalem On-Device-LLM über Apple Intelligence — es werden keine Cloud-KI-Dienste verwendet
-- Spracherkennung auf dem Gerät (erfordert iPadOS 26+ mit Apple Intelligence)
+- Spracherkennung auf dem Gerät
 - WebVTT-Untertitelerstellung für aufgezeichnete Videos
 - Working-Alliance-Bewertung anhand dreier Dimensionen (Bindung, Ziele, Aufgaben)
 - Interaktiver Chat für Folgefragen zu Bewertungen

@@ -41,8 +41,10 @@
 - Safety controls — recording cannot be toggled during active exam sessions
 
 ### 🤖 **AI Assistant** *(Experimental, New in v1.2)*
+> **Important:** The AI assistant requires an iPad with Apple Intelligence support — this means iPad Pro (M1 or later), iPad Air (M1 or later), or iPad mini (A17 Pro). The standard iPad does not support Apple Intelligence due to hardware limitations (minimum 8 GB RAM required). iPadOS 26+ is also required. The AI assistant button is automatically hidden on unsupported devices.
+
 - Powered by Apple's local on-device LLM via Apple Intelligence — no cloud AI services are used
-- On-device speech-to-text transcription (requires iPadOS 26+ with Apple Intelligence)
+- On-device speech-to-text transcription
 - WebVTT subtitle generation for recorded videos
 - Working Alliance assessment using three dimensions (Bond, Goals, Tasks)
 - Interactive chat for follow-up questions about assessments
