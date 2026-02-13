@@ -29,8 +29,8 @@ Die App funktioniert durch:
 ### Datenverwendung
 - **Prüfungspläne:** Die App ruft Prüfungszeitdaten von einer sicheren Firestore-Datenbank ab. Diese Daten enthalten nur Prüfungszeiten, Zonen und Terminplaninformationen — keine persönlichen oder identifizierenden Informationen.
 - **Lokale Speicherung:** Die App kann Prüfungspläne lokal auf Ihrem Gerät zwischenspeichern für Offline-Funktionalität. Diese zwischengespeicherten Daten verbleiben auf Ihrem Gerät und werden nicht weitergegeben.
-- **Videoaufzeichnungen:** Wenn die Aufnahmefunktion aktiviert ist, werden Video und Audio über die Frontkamera und das Mikrofon des Geräts aufgenommen und ausschließlich lokal auf dem Gerät gespeichert. Aufzeichnungen werden niemals auf externe Server hochgeladen. Benutzer können Aufzeichnungen jederzeit in den App-Einstellungen ansehen, abspielen und löschen.
-- **Transkriptionen und KI-Bewertungen:** Bei Nutzung der KI-Assistentenfunktion (erfordert iPadOS 26+ mit Apple Intelligence) wird Audio auf dem Gerät mithilfe von Apples SpeechAnalyzer-Framework transkribiert. KI-Bewertungen werden auf dem Gerät mithilfe von Apple Foundation Models erstellt. Keine Audio-, Transkriptions- oder Bewertungsdaten werden an externe Server übertragen.
+- **Videoaufzeichnungen:** Wenn die Aufnahmefunktion aktiviert ist, werden Video und Audio über die Frontkamera und das Mikrofon des Geräts aufgenommen und ausschließlich lokal auf dem Gerät gespeichert. Aufzeichnungen sind für die kurzfristige Nutzung während des Prüfungszeitraums vorgesehen — sie werden vor Beginn der nächsten Prüfungssitzung automatisch gelöscht, und Benutzer können sie jederzeit auch manuell in den App-Einstellungen löschen. Aufzeichnungen werden niemals auf externe Server hochgeladen oder dort gespeichert.
+- **Transkriptionen und KI-Bewertungen:** Bei Nutzung der KI-Assistentenfunktion (erfordert iPadOS 26+ mit Apple Intelligence) wird Audio auf dem Gerät mithilfe von Apples SpeechAnalyzer-Framework transkribiert. KI-Bewertungen werden auf dem Gerät mithilfe von Apples lokalem Large Language Model (LLM) über Apple Foundation Models erstellt. **Die gesamte KI-Verarbeitung läuft vollständig auf der Neural Engine des Geräts — es werden keine Daten an Apple-Server oder andere Cloud-Dienste gesendet.** Keine Audio-, Transkriptions- oder Bewertungsdaten verlassen das Gerät.
 - **Keine Analytik:** Die App verwendet keine Analyse-, Tracking- oder Werbedienste.
 - **Keine Benutzerkonten:** Die App erfordert keine Benutzerregistrierung oder Anmeldung.
 
@@ -48,8 +48,8 @@ Die App verwendet Firebase Firestore (Google) ausschließlich zum Abrufen von Pr
 ### Datensicherheit
 - Alle Prüfungsplanadaten werden über sichere HTTPS-Verbindungen übertragen
 - Es werden keine Benutzerdaten auf externen Servern gespeichert
-- Videoaufzeichnungen und Transkriptionen werden nur lokal auf dem Gerät gespeichert
-- KI-Verarbeitung erfolgt vollständig auf dem Gerät mittels Apple Intelligence
+- Videoaufzeichnungen werden temporär lokal auf dem Gerät gespeichert und vor der nächsten Prüfung automatisch gelöscht
+- KI-Verarbeitung erfolgt vollständig auf dem Gerät mittels Apples lokalem LLM (es werden keine Cloud-KI-Dienste verwendet)
 - Die App arbeitet im Nur-Lese-Modus bezüglich Prüfungsdaten
 
 ### Datenschutz für Minderjährige

@@ -34,18 +34,20 @@
 - Automatische Videoaufnahme während Prüfungssitzungen über die Frontkamera
 - H.265/HEVC-Kodierung für effiziente Videokomprimierung
 - Audioaufnahme zusammen mit Video
-- Aufnahmenverwaltung: Ansehen, Abspielen und Löschen von Aufzeichnungen in den Einstellungen
+- Aufzeichnungen werden temporär auf dem iPad gespeichert und vor der nächsten Prüfungssitzung automatisch gelöscht
+- Aufnahmenverwaltung: Ansehen, Abspielen und manuelles Löschen von Aufzeichnungen in den Einstellungen
 - Responsiver Videoplayer, der sich an verschiedene iPad-Größen anpasst
 - Unabhängige Soundsteuerung — Aufnahme-Schalter ist getrennt von den Prüfungstönen
 - Sicherheitskontrollen — Aufnahme kann während aktiver Prüfungssitzungen nicht umgeschaltet werden
 
 ### 🤖 **KI-Assistent** *(Experimentell, Neu in v1.2)*
+- Basiert auf Apples lokalem On-Device-LLM über Apple Intelligence — es werden keine Cloud-KI-Dienste verwendet
 - Spracherkennung auf dem Gerät (erfordert iPadOS 26+ mit Apple Intelligence)
 - WebVTT-Untertitelerstellung für aufgezeichnete Videos
 - Working-Alliance-Bewertung anhand dreier Dimensionen (Bindung, Ziele, Aufgaben)
 - Interaktiver Chat für Folgefragen zu Bewertungen
 - Mehrsprachige Unterstützung (Deutsch, Englisch, Französisch, Italienisch)
-- Alle KI-Verarbeitung läuft vollständig auf dem Gerät — keine Daten werden an externe Server gesendet
+- Alle Verarbeitung läuft vollständig auf der Neural Engine des Geräts — keine Daten werden an Apple-Server oder andere externe Dienste gesendet
 
 ### 🎵 **Benutzerdefiniertes Audio**
 - Professionelle deutsche Audio-Benachrichtigungen

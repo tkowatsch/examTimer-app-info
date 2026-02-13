@@ -29,8 +29,8 @@ The app operates by:
 ### Data Usage
 - **Exam Schedules:** The app retrieves exam timing data from a secure Firestore database. This data contains only exam times, zones, and scheduling information — no personal or identifying information.
 - **Local Storage:** The app may cache exam schedules locally on your device for offline functionality. This cached data remains on your device and is not transmitted elsewhere.
-- **Video Recordings:** When the recording feature is enabled, video and audio are captured using the device's front camera and microphone and stored exclusively on the local device. Recordings are never uploaded to external servers. Users can view, play back, and delete recordings at any time from the app's settings.
-- **Transcriptions and AI Assessments:** When the AI assistant feature is used (requires iPadOS 26+ with Apple Intelligence), audio is transcribed on-device using Apple's SpeechAnalyzer framework. AI assessments are generated on-device using Apple Foundation Models. No audio, transcript, or assessment data is transmitted to external servers.
+- **Video Recordings:** When the recording feature is enabled, video and audio are captured using the device's front camera and microphone and stored exclusively on the local device. Recordings are intended for short-term use during the examination period — they are automatically deleted before the next exam session begins, and users can also manually delete them at any time from the app's settings. Recordings are never uploaded to or stored on external servers.
+- **Transcriptions and AI Assessments:** When the AI assistant feature is used (requires iPadOS 26+ with Apple Intelligence), audio is transcribed on-device using Apple's SpeechAnalyzer framework. AI assessments are generated on-device using Apple's local large language model (LLM) provided through Apple Foundation Models. **All AI processing runs entirely on the device's Neural Engine — no data is sent to Apple servers or any other cloud service.** No audio, transcript, or assessment data leaves the device.
 - **No Analytics:** The app does not use any analytics, tracking, or advertising services.
 - **No User Accounts:** The app does not require user registration or login.
 
@@ -48,8 +48,8 @@ The app uses Firebase Firestore (Google) solely for retrieving exam schedule dat
 ### Data Security
 - All exam schedule data is transmitted over secure HTTPS connections
 - No user data is stored on external servers
-- Video recordings and transcriptions are stored only on the local device
-- AI processing is performed entirely on-device using Apple Intelligence
+- Video recordings are stored temporarily on the local device and automatically deleted before the next exam
+- AI processing is performed entirely on-device using Apple's local LLM (no cloud AI services are used)
 - The app operates in a read-only mode regarding exam data
 
 ### Children's Privacy

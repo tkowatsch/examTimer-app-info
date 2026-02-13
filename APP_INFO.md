@@ -34,18 +34,20 @@
 - Automatic video recording during exam sessions using the front camera
 - H.265/HEVC encoding for efficient video compression
 - Audio capture alongside video
-- Recording management: view, play back, and delete recordings from settings
+- Recordings are stored temporarily on the iPad and automatically deleted before the next exam session
+- Recording management: view, play back, and manually delete recordings from settings
 - Responsive video player adapting to different iPad sizes
 - Independent sound control — recording toggle is separate from exam audio
 - Safety controls — recording cannot be toggled during active exam sessions
 
 ### 🤖 **AI Assistant** *(Experimental, New in v1.2)*
+- Powered by Apple's local on-device LLM via Apple Intelligence — no cloud AI services are used
 - On-device speech-to-text transcription (requires iPadOS 26+ with Apple Intelligence)
 - WebVTT subtitle generation for recorded videos
 - Working Alliance assessment using three dimensions (Bond, Goals, Tasks)
 - Interactive chat for follow-up questions about assessments
 - Multi-language support (German, English, French, Italian)
-- All AI processing runs entirely on-device — no data is sent to external servers
+- All processing runs entirely on the device's Neural Engine — no data is sent to Apple servers or any other external service
 
 ### 🎵 **Custom Audio**
 - Professional German audio notifications
